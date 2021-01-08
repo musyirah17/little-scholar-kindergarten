@@ -1,0 +1,118 @@
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Appointment Little Scholars</title>
+
+    <link rel="stylesheet" href="4-appointment.css">
+
+  </head>
+  <body>
+
+    <div class="container">
+     <div id="image">
+       <img src="LSK Logo 1.png"
+            alt="web logo"
+            width="40" height="40">
+     </div>
+     <div id="text">
+       <a href="homepage.html">Little Scholar Kindergarten</a>
+     </div>
+    </div>
+
+    <!-- top navigation -->
+    <div id="mySidenav" class="sidenav">
+      <a href="1-program.html" id="program">Programs</a>
+      <a href="2-event.html" id="events">Events</a>
+      <a href="3-registration.html" id="register">Register</a>
+      <a href="4-appointment.html" id="appointment">Appointment</a>
+      <a href="5-contact-us.html" id="contact">Contact</a>
+    </div>
+
+    <header>
+        <h1><b>Make an Appointment</b></h1>
+        <p>Have any inquiries or important matters to reach out about your kids? <br>
+          Get in touch with us by filling out the form below.</p>
+    </header>
+
+    <!--horizontal ruler-->
+    <hr>
+
+    <br>
+    <fieldset>
+
+
+    <div class="formColor">
+
+
+    <form action="4-response.html" method="post">
+      <label for="name">Name <strong>*</strong></label> <br>
+      <input id="name" type="text" name="name" required> <br><br>
+
+      <label for="TelNo">Mobile No.(e.g. xxx-xxxxxxxx)</label>
+      <label class="Email" for="email">Email Address <strong>*</strong></label><br>
+      <input id="area_Code"type="text" name="areaCode" maxlength="3" placeholder="013">
+      <input id="no" type="text" name="telNo" maxlength="8">
+      <input id="inEmail" type="text" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Please enter email address" placeholder="abcd@gmail.com" required><br><br>
+
+      <label for="date">Preferred Date <strong>*</strong></label>
+      <label class="Time" for="time">Preferred Time <strong>*</strong></label><br>
+      <input class="inDate" type="date" name="date" required>
+      <input class="inTime" type="time" name="time" required><br><br>
+
+      <label for="message">Reason for Appointment <strong>*</strong></label>
+      <textarea name="message" rows="8" cols="94" placeholder="Write a message!" required></textarea><br><br>
+
+      <label for="contact">Preferred Contact</label><br>
+      <select name="contact">
+        <option disabled="disabled" selected="selected">Please choose</option>
+        <option value="1">Email</option>
+        <option value="2">Phone</option>
+      </select>
+      <p id="required"> <strong>*</strong>Required field</p>
+      <button id="btn" type="submit" name="button">Submit</button>
+
+    </form>
+
+    </div>
+    </fieldset>
+    <!--horizontal ruler-->
+    <hr>
+
+    <script>
+      document.getElementById("btn").addEventListener("click", function(event) {
+        var name = document.getElementById("name").value;
+        var no = document.getElementById("no").value;
+        var area_Code = document.getElementById("area_Code").value;
+
+        if(!isNaN(name))
+        {
+          alert("Please insert the correct name");
+        }
+
+        if (isNaN(area_Code))
+        {
+          alert("Area code invalid");
+          document.getElementById("area_Code").style.borderColor="red";
+          document.getElementById("area_Code").style.borderWidth="medium";
+          event.preventDefault();
+        }
+
+        if (isNaN(no))
+        {
+          alert("Please insert the correct mobile number");
+          document.getElementById("no").style.borderColor="red";
+          document.getElementById("no").style.borderWidth="medium";
+          event.preventDefault();
+        }
+
+      })
+
+    </script>
+
+    <footer>Copyright LITTLE SCHOLARS 2020 | Section 1</footer>
+
+  </body>
+</html>

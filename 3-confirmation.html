@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Confirmation</title>
+    <style media="screen">
+      body {
+        margin: 0px auto;
+        padding: 0;
+        justify-content: center;
+        background-image: url(blueback.jpg);
+      }
+
+      /* header */
+      header
+      {
+        width: 100%;
+        margin:10px;
+        padding:10px;
+        text-align: center;
+        font-size: 27px;
+      }
+
+      h2 {
+        width: 100%;
+        text-align: center;
+        background-color: #386fa4;
+        padding: 3px 0px;
+        color: white;
+      }
+
+      h3 {
+        text-align: center;
+      }
+
+      #tab4 p {
+        text-align: center;
+        font-size: 25px;
+      }
+
+      #tab4 .grid {
+        width: 30%;
+        height: 150px;
+        margin: 0 auto;
+        display: table;
+      }
+
+      #tab4 .grid .column {
+        float: left;
+        width: 130px;
+        height: 130px;
+        padding: 10px;
+        margin-left: 10%;
+        align-items: center;
+        border: 2px solid black;
+        background-color: #133c55;
+        color: white;
+        box-shadow: 10px 10px 5px #133c55;
+        border-radius: 10px;
+      }
+
+      #tab4 .grid .column h3 {
+        background-color: #133c55;
+        position: relative;
+        /* margin-top: 40px; */
+      }
+
+      #tab4 .grid .column .timetable {
+        background-color: #133c55;
+        position: relative;
+        margin-top: 40px;
+      }
+
+      #tab4 .grid .column a {
+        margin-left: 35%;
+        margin-top: 100%;
+        border: 1px solid black;
+        text-decoration: none;
+        background-color: beige;
+        color: black;
+        border-radius: 5px;
+        padding: 3px 5px;
+      }
+
+      .finish {
+        margin-left: 44%;
+        border: 1px solid black;
+        text-decoration: none;
+        background-color: beige;
+        color: black;
+        border-radius: 5px;
+        padding: 3px 5px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <header>
+        <h1>Congratulations!</h1>
+        <p>Your child is now has officially become part of the <b>Little Scholars</b>.</p>
+    </header>
+
+    <br>
+    <br>
+
+    <div id="tab4" class="tabcontent">
+      <p>Here to print the documents related to the admission.</p>
+      <br>
+        <div class="grid">
+          <div class="column">
+            <h3>Student Biodata Form</h3>
+            <a href="file:///C:/Users/ADMIN/Desktop/IIUM%20DEGREE/2%20YEAR%201%20SEM/WEBTECH/Final%20Project/3-Print.pdf" target="_blank">Print</a>
+          </div>
+          <div class="column">
+            <h3 class="timetable">Timetable</h3>
+            <a href="file:///C:/Users/ADMIN/Desktop/IIUM%20DEGREE/2%20YEAR%201%20SEM/WEBTECH/Final%20Project/3-Timetable.pdf">Print</a>
+          </div>
+        </div>
+        <br>
+    </div>
+
+    <br><br><br>
+    <a class="finish" href="3-registration.html">Back To Registration Page</a>
+  </body>
+</html>

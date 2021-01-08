@@ -1,0 +1,463 @@
+* {
+  /* border: 1px solid black; */
+  font-family: cursive, arial;
+}
+
+body {
+  margin: 20px auto;
+  padding: 0;
+  background-image: url(blueback.jpg);
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+#text {
+  font-size: 18px;
+  padding-left: 5px;
+}
+#text a {
+  text-decoration: none;
+  color: black;
+}
+
+#mySidenav a {
+  position: absolute; /* Position them relative to the browser window */
+  top: -30px; /* Position them outside of the screen */
+  transition: 0.3s; /* Add transition on hover */
+  padding-top: 40px; /* 15px padding */
+  width: 120px; /* Set a specific width */
+  height: 60px;
+  text-decoration: none; /* Remove underline */
+  font-size: 20px; /* Increase font size */
+  color: white; /* White text color */
+  border-radius: 0 0px 5px 5px; /* Rounded corners on the top right and bottom right side */
+  text-align : center;
+}
+
+#mySidenav a:hover {
+  top: 0; /* On mouse-over, make the elements appear as they should */
+}
+
+#program {
+  right: 510px;
+  background-color: #133c55;
+}
+
+#events {
+  right: 385px;
+  background-color: #386fa4;
+}
+
+#register {
+  right: 260px;
+  background-color: #59a5d8;
+}
+
+#appointment {
+  right: 135px;
+  background-color: #84d2f6;
+  width: 150px;
+}
+
+#contact {
+  right: 10px;
+  background-color: #91e5f6
+}
+
+/* header */
+header
+{
+  width: 100%;
+  padding-top: 10px;
+  text-align: center;
+  font-size: 27px;
+  line-height: 30px;
+  font-family: 'Concert One', cursive;
+}
+
+.box {
+  width: 65%;
+  margin: 0 auto;
+  font-size: 18px;
+}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  background-color: none;
+  width: 100%;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: #386fa4;
+  float: left;
+  border: 2px solid black;
+  border-bottom: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 30px;
+  transition: 0.3s;
+  border-radius: 10px 10px 0px 0px;
+  color: white;
+  font-size: 15px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+ .tab button.active {
+  background-color: #84d2f6;
+  border-bottom: #84d2f6;
+  color: black;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  margin: 0 auto;
+  border: 2px solid  black;
+  border-radius: 0px 15px 15px 15px;
+  background-color:  #84d2f6;
+  font-size: 18px;
+  max-height: 1000px;
+}
+
+h2 {
+  width: 100%;
+  text-align: center;
+  background-color: #386fa4;
+  padding: 3px 0px;
+  color: white;
+}
+
+h3 {
+  text-align: center;
+}
+
+.box .strong {
+  color: red;
+}
+
+strong {
+  color: red;
+}
+
+/* First tab */
+
+/* Login Information */
+  #tab1 form {
+    height: 100px;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 10px;
+  }
+
+  #tab1 .labels {
+    height: 70px;
+    width: 30%;
+    float:left;
+    margin-left: 3%;
+  }
+
+  #tab1 .inputs {
+    height: 80px;
+    width: 65%;
+    float: left;
+  }
+
+  #tab1 .inputs input {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  #tab1 label {
+    line-height: 30px;
+  }
+
+  #tab1 .login .submit{
+    margin-left: 50%;
+    color: black;
+    padding: 0px 5px;
+  }
+
+/* Create account */
+  #tab1 .labels2 {
+    height: 200px;
+    width: 30%;
+    float:left;
+    margin-left: 3%;
+  }
+
+  #tab1 .inputs2 {
+    height: 200px;
+    width: 65%;
+    float: left;
+  }
+
+  #tab1 .inputs2 input {
+    margin-bottom: 3px;
+    width: 100%;
+  }
+
+  #tab1 label {
+    line-height: 30px;
+  }
+
+  #tab1 .parent .submit{
+    margin-left: 50%;
+    color: black;
+    padding: 0px 5px;
+  }
+
+/* Sec Tab */
+
+/* Student Information */
+  #tab2 .student {
+    width: 85%;
+    margin: 0 auto;
+    padding-top: 10px;
+  }
+
+  #tab2 .name {
+    width: 100%;
+  }
+
+  #tab2 .icnum {
+    width: 45%;
+    float: left;
+  }
+
+  #tab2 .icnum input{
+    width: 100%;
+  }
+
+  #tab2 .passport {
+    width: 45%;
+    float: right;
+  }
+
+  #tab2 .passport input{
+    width: 100%;
+  }
+
+  #tab2 .dob {
+    width: 32%;
+    float: left;
+  }
+
+  #tab2 .dob input{
+    width: 100%;
+  }
+
+  #tab2 .gender {
+    width: 32%;
+    float: left;
+    margin-left: 2%;
+  }
+
+  #tab2 .gender select{
+    width: 100%;
+    height: 24px;
+  }
+
+  #tab2 .disability {
+    width: 32%;
+    float: left;
+    margin-left: 2%;
+  }
+
+  #tab2 .disability select{
+    width: 100%;
+    height: 24px;
+  }
+
+  #tab2 .race {
+    width: 32%;
+    float: left;
+  }
+
+  #tab2 .race input{
+    width: 100%;
+  }
+
+  #tab2 .nationality {
+    width: 32%;
+    float: left;
+    margin-left: 2%;
+  }
+
+  #tab2 .nationality select{
+    width: 100%;
+    height: 24px;
+  }
+
+  #tab2 .toilet {
+    width: 32%;
+    float: left;
+    margin-left: 2%;
+  }
+
+  #tab2 .toilet select{
+    width: 100%;
+    height: 24px;
+  }
+
+  #tab2 .address {
+    width: 100%;
+  }
+
+  #tab2 .state {
+    width: 32%;
+    float: left;
+  }
+
+  #tab2 .state select{
+    width: 100%;
+    height: 24px;
+  }
+
+  #tab2 .city {
+    width: 32%;
+    float: left;
+    margin-left: 3%;
+  }
+
+  #tab2 .city input{
+    width: 100%;
+  }
+
+  #tab2 .postcode {
+    width: 30%;
+    float: left;
+    margin-left: 3%;
+  }
+
+  #tab2 .postcode input{
+    width: 100%;
+  }
+
+  #tab2 .student .submit {
+    margin-left: 46%;
+    color: black;
+    padding: 0px 5px;
+  }
+
+/* admission */
+  #tab2 .Session {
+    margin-left: 7%;
+  }
+
+  #tab2 .session {
+    width: 32.3%;
+    height: 24px;
+    float: left;
+  }
+
+  #tab2 .Programme {
+    margin-left: 16%
+  }
+
+  #tab2 .programme {
+    width: 32.3%;
+    height: 24px;
+    float: left;
+    margin-left: 1.5%;
+  }
+
+  #tab2 .Branch {
+    margin-left: 23%
+  }
+
+  #tab2 .branch {
+    width: 32.3%;
+    height: 24px;
+    float: left;
+    margin-left: 1.5%;
+  }
+
+  #tab2 .admission .submit {
+    margin-left: 46%;
+    color: black;
+    padding: 0px 5px;
+  }
+
+  #tab2 .admission {
+    width: 85%;
+    margin: 0 auto;
+    padding-top: 10px;
+  }
+
+/* Third tab */
+
+  #tab3 .grid {
+    width: 60%;
+    margin: 0 auto;
+    display: table;
+  }
+
+  #tab3 .grid .column {
+    float: left;
+    width: 130px;
+    height: 130px;
+    padding: 10px;
+    margin-left: 5%;
+    align-items: center;
+    border: 2px solid black;
+    background-color: #133c55;
+    color: white;
+    box-shadow: 10px 10px 5px #133c55;
+    border-radius: 10px;
+  }
+
+  #tab3 .grid .column h3 {
+    background-color: #133c55;
+    position: relative;
+    margin-top: 40px;
+  }
+
+  #tab3 .accinfo {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 10px;
+    border: 2px solid black;
+    box-shadow: 10px 10px 5px #133c55;
+  }
+
+  #tab3 .proof {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  #tab3 .proof a {
+    text-decoration: none;
+    color: black;
+  }
+
+  #tab3 .finish {
+    margin-left: 47%;
+    border: 1px solid black;
+    text-decoration: none;
+    background-color: beige;
+    color: black;
+    border-radius: 5px;
+    padding: 0px 5px;
+  }
+
+hr {
+  border: 1px solid #001233;
+  background-color: #001233;
+  width: 65%;
+}
+
+footer {
+  font-size: 13px;
+  text-align: center;
+}

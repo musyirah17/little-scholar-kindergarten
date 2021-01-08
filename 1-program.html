@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Programs</title>
+
+    <style media="screen">
+    * {
+      /* border: 1px solid black; */
+      font-family: cursive, arial;
+    }
+
+      h1 {
+        color: #006266;
+      }
+
+      h2 {
+        color: #133C55;
+        text-align: center;
+      }
+
+      body {
+        margin: 20px auto;
+        color: black;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        background-image: url(blueback.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+      }
+
+      .container {
+        display: flex;
+        align-items: center;
+      }
+
+      #text {
+        font-size: 18px;
+        padding-left: 5px;
+      }
+
+      #text a {
+        text-decoration: none;
+        color: black;
+      }
+
+
+      /* Style the links inside the sidenav */
+      #mySidenav a {
+        position: absolute; /* Position them relative to the browser window */
+        top: -30px; /* Position them outside of the screen */
+        transition: 0.3s; /* Add transition on hover */
+        padding-top: 40px; /* 15px padding */
+        width: 120px; /* Set a specific width */
+        height: 40px;
+        text-decoration: none; /* Remove underline */
+        font-size: 20px; /* Increase font size */
+        color: white; /* White text color */
+        border-radius: 0 0px 5px 5px; /* Rounded corners on the top right and bottom right side */
+        text-align : center;
+      }
+
+      #mySidenav a:hover {
+        top: 0; /* On mouse-over, make the elements appear as they should */
+      }
+
+      #program {
+        right: 510px;
+        background-color: #133c55;
+      }
+
+      #events {
+        right: 385px;
+        background-color: #386fa4;
+      }
+
+      #register {
+        right: 260px;
+        background-color: #59a5d8;
+      }
+
+      #appointment {
+        right: 135px;
+        background-color: #84d2f6;
+        width: 150px;
+      }
+
+      #contact {
+        right: 10px;
+        background-color: #91e5f6
+      }
+
+      header
+      {
+        width: 100%;
+        padding-top: 10px;
+        text-align: center;
+        font-size: 27px;
+        line-height: 30px;
+        font-family: cursive;
+      }
+
+      hr {
+        border: 1px solid #001233;
+        background-color: #001233;
+        width: 75%;
+      }
+
+      .p1 {
+        border-radius: 4px;
+        width: 72%;
+        height: auto;
+        margin: auto;
+        padding: 15px;
+        border: 1px solid black;
+        text-align: justify;
+        display: flex;
+        background-color: rgba(89, 165, 216, 0.5);
+      }
+
+      .p1 p{
+        margin-left: 5px;
+        color: Black;
+      }
+
+      .pic1 {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        margin: auto;
+      }
+
+      .bt1 {
+        margin-left: 5px;
+        float: right;
+      }
+
+      .p2 {
+        border-radius: 4px;
+        width: 72%;
+        height: auto;
+        margin: auto;
+        padding: 15px;
+        border: 1px solid black;
+        text-align: justify;
+        display: flex;
+        background-color: rgba(89, 165, 216, 0.5);
+      }
+
+      .p2 p{
+        margin-left: 5px;
+      }
+
+      .pic2 {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        margin: auto;
+      }
+
+      .bt2 {
+        margin-left: 5px;
+        float: right;
+      }
+
+      footer {
+        font-size: 13px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+       <div id="image">
+         <img src="LSK Logo 1.png"
+              alt="web logo"
+              width="40" height="40">
+       </div>
+
+       <div id="text">
+         <a href="homepage.html">Little Scholar Kindergarten</a>
+       </div>
+    </div>
+
+    <!-- top navigation -->
+    <div id="mySidenav" class="sidenav">
+      <a href="1-program.html" id="program">Programs</a>
+      <a href="2-event.html" id="events">Events</a>
+      <a href="3-registration.html" id="register">Register</a>
+      <a href="4-appointment.html" id="appointment">Appointment</a>
+      <a href="5-contact-us.html" id="contact">Contact</a>
+    </div>
+
+    <header>
+        <div class="text">
+          <h1>Programs & Syllabus</h1>
+          <p>Find the best program and syllabus suited form
+          for your child!</p>
+        </div>
+    </header>
+
+    <hr><br>
+
+    <h2>The Little Scholar Program</h2>
+    <div class="p1">
+      <div class="pic1">
+        <img src="1-pic 1.jpg" alt="lsklogo"
+             width="120" height="120">
+        <div class="text">
+            <p>The Little Scholar Program follows a systematic teaching,
+            comprehensive and creative syllabus that exposes children to
+            exciting hands on activities and group participation.
+            This program is designed to enhance children's creativity, intellect,
+            mannerism and many more valuable aspects. It is also a program
+            for children from age 3 to 6 years old which also prepers children
+            for their primary school education.</p>
+            <form action="1-p1.html" method="post">
+              <button class="bt1">Learn More</button>
+            </form>
+        </div>
+      </div>
+    </div>
+
+    <h2>The Little Islamic Scholar Program</h2>
+    <div class="p2">
+      <div class="pic2">
+        <img src="1-pic 2.jpg" alt="lsklogo"
+             width="120" height="120">
+        <div class="text">
+          <p>The Little Islamic Scholar program is a comprehensive program
+          that incorporates Islamic studies along with the subjects offered
+          in the Little Scholar Program. This makes the Little Islamic Scholar
+          Program a holistic program suited for Muslim Children. The prgram is
+          designed for children from age 3 to 6 years old which also prepers children
+          for their primary school education.</p>
+          <form action="1-p2.html" method="post">
+            <button class="bt2">Learn More</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+    <footer>Copyright LITTLE SCHOLARS 2020 | Section 1</footer>
+  </body>
+</html>

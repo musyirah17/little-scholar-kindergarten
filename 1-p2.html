@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Little Islamic Scholar Program</title>
+
+    <style media="screen">
+
+      * {
+        /* border: 1px solid black; */
+        font-family: cursive, arial;
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 20px auto;
+        color: black;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        background-image: url(blueback.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+      }
+
+      .container {
+        display: flex;
+        align-items: center;
+      }
+
+      #text {
+        font-size: 18px;
+        padding-left: 5px;
+      }
+
+      #text a {
+        text-decoration: none;
+        color: black;
+      }
+
+
+    /* Style the links inside the sidenav */
+      #mySidenav a {
+        position: absolute; /* Position them relative to the browser window */
+        top: -10px; /* Position them outside of the screen */
+        transition: 0.3s; /* Add transition on hover */
+        padding-top: 20px; /* 15px padding */
+        width: 120px; /* Set a specific width */
+        height: 50px;
+        text-decoration: none; /* Remove underline */
+        font-size: 20px; /* Increase font size */
+        color: white; /* White text color */
+        border-radius: 0 0px 5px 5px; /* Rounded corners on the top right and bottom right side */
+        text-align : center;
+      }
+
+      #mySidenav a:hover {
+        top: 0; /* On mouse-over, make the elements appear as they should */
+      }
+
+      #program {
+        right: 510px;
+        background-color: #133c55;
+      }
+
+      #events {
+        right: 385px;
+        background-color: #386fa4;
+      }
+
+      #register {
+        right: 260px;
+        background-color: #59a5d8;
+      }
+
+      #appointment {
+        right: 135px;
+        background-color: #84d2f6;
+        width: 150px;
+      }
+
+      #contact {
+        right: 10px;
+        background-color: #91e5f6
+      }
+
+      header
+      {
+        width: 100%;
+        margin-top: 10px;
+        padding: 10px;
+        text-align: center;
+        font-size: 30px;
+      }
+
+      h2 {
+        color: #133C55;
+        text-align: center;
+      }
+
+      header p {
+        font-size: 17px;
+      }
+
+      hr {
+        border: 1px solid black;
+        width: 65%;
+      }
+
+      .back {
+        float: left;
+        margin-left: 17.5%;
+        border-radius: 3px;
+      }
+
+      .next {
+        float: right;
+        margin-right: 17.5%;
+        border-radius: 3px;
+      }
+
+      .box {
+        margin: 0 auto;
+        margin-top: 35px;
+        width: 65%;
+      }
+
+      /* Style the tab */
+      .tab {
+        float: left;
+        border: 1px solid #ccc;
+        background-color: #386fa4;
+        width: 23%;
+        height: 680px;
+        border-radius: 6px;
+      }
+
+      /* Style the buttons inside the tab */
+      .tab button {
+        display: block;
+        background-color: inherit;
+        color: white;
+        padding: 22px 16px;
+        width: 100%;
+        border: none;
+        outline: none;
+        text-align: left;
+        cursor: pointer;
+        transition: 0.3s;
+        font-size: 17px;
+      }
+
+      /* Change background color of buttons on hover */
+      .tab button:hover {
+        background-color: #ddd;
+      }
+
+      /* Create an active/current "tab button" class */
+      .tab button.active {
+        background-color: #B8E8FF;
+        border-bottom: #84d2f6;
+        color: black;
+      }
+
+      /* Style the tab content */
+      .tabcontent {
+        float: left;
+        padding: 0px 5% 5% 5%;
+        border: 1px solid #ccc;
+        width: 77%;
+        border-left: none;
+        height: 680px;
+        background-color: #B8E8FF;
+        border-radius: 6px;
+      }
+
+      /* Clear floats after the tab */
+      .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      ul{
+        text-align: left;
+      }
+
+      h3{
+        background-color: #386fa4;
+        color: white;
+        text-align: center;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      table, tr, td
+      {
+        border: 1px solid black;
+        background-color: white;
+        padding: 0.5%;
+      }
+
+      footer {
+        font-size: 13px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+       <div id="image">
+         <img src="LSK Logo 1.png"
+              alt="web logo"
+              width="40" height="40">
+       </div>
+
+       <div id="text">
+         <a href="homepage.html">Little Scholar Kindergarten</a>
+       </div>
+    </div>
+
+    <!-- top navigation -->
+    <div id="mySidenav" class="sidenav">
+      <a href="1-program.html" id="program">Programs</a>
+      <a href="2-event.html" id="events">Events</a>
+      <a href="3-registration.html" id="register">Register</a>
+      <a href="4-appointment.html" id="appointment">Appointment</a>
+      <a href="5-contact-us.html" id="contact">Contact</a>
+    </div>
+
+    <header>
+        <h2>Little Islamic Scholar Program</h2>
+        <p>Go to the tabbed menu to learn more
+        about the Little Islamic Scholar Program's syllabus and sessions offered.</p>
+    </header>
+
+    <hr>
+
+    <form action="1-program.html" method="post">
+      <button class="back"><< Back to Programs</button>
+    </form>
+    <form action="1-p1.html" method="post">
+      <button class="next">Next Program >></button>
+    </form>
+
+    <div class="box">
+      <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'syllabus')" id="defaultOpen">Syllabus</button>
+        <button class="tablinks" onclick="openCity(event, 'half')">Half-Day Session</button>
+        <button class="tablinks" onclick="openCity(event, 'full')">Full-Day Session</button>
+      </div>
+
+      <div id="syllabus" class="tabcontent">
+        <h3>SYLLABUS</h3>
+        <p>The Syllabus offered for the Little Islamic Scholar Program covers
+        all aspects of academic and religion. The program is a comprehensive
+        program to develop student in reading and writing in Bahasa Melayu
+        and English, increase their interest in simple Mathematics and
+        Science and blooming their creativity with Arts and Music classes as
+        well. This program also incorporates Islamic studies along with
+        stress-free classes with PE and Playtime sessions.</p>
+
+        <h3>SUBJECTS</h3>
+        <ul>
+          <li>Iqra</li>
+          <li>Prayer**</li>
+          <li>Surahs & Duas</li>
+          <li>Reading & Writing in Bahasa Melayu(BM)</li>
+          <li>Reading & Writing in English(EN)</li>
+          <li>Mathematics</li>
+          <li>Science</li>
+          <li>Art</li>
+          <li>Music</li>
+          <li>Physical Education(PE)</li>
+          <li>Playtime</li>
+          <br>
+          <p>** Only available for full day sessions</p>
+        </ul>
+      </div>
+
+      <div id="half" class="tabcontent">
+        <h3>HALF-DAY SESSION</h3>
+        <p>Below is the schedule for the Little Islamic Scholars Program
+          half-day session. The session starts at 8.30 a.m. and
+          ends at 1.00 p.m. Food for breakfast and recess are
+          included.</p>
+        <table>
+          <tr>
+            <colgroup>
+              <col span="1">
+            </colgroup>
+            <td></td>
+            <th scope="col">M</th>
+            <th scope="col">T</th>
+            <th scope="col">W</th>
+            <th scope="col">T</th>
+            <th scope="col">F</th>
+          </tr>
+
+          <tr>
+            <td>0830 - 0900</td>
+            <td style="background-color:#FCF5C7" colspan="5">Arrival, Breakfast</td>
+          </tr>
+
+          <tr>
+            <td>0900 - 0940</td>
+            <td style="background-color:#FFD6FF">Maths</td>
+            <td style="background-color:#ADF7B6">Reading (BM)</td>
+            <td style="background-color:#C1EEFF">Music</td>
+            <td style="background-color:#ADF7B6">Reading (BM)</td>
+            <td style="background-color:#FFD6FF">Maths</td>
+          </tr>
+
+          <tr>
+            <td>0940 - 1020</td>
+            <td style="background-color:#D9D9D9">Iqra</td>
+            <td style="background-color:#FFEE93">PE</td>
+            <td style="background-color:#FFD6FF">Maths</td>
+            <td style="background-color:#FFEE93">PE</td>
+            <td style="background-color:#D9D9D9">Iqra</td>
+          </tr>
+
+          <tr>
+            <td>1020 - 1100</td>
+            <td style="background-color:#ADF7B6">Writing (BM)</td>
+            <td style="background-color:#FFC09F">Art</td>
+            <td style="background-color:#D9D9D9">Surahs & Duas</td>
+            <td style="background-color:#FFC09F">Art</td>
+            <td style="background-color:#ADF7B6">Writing (BM)</td>
+          </tr>
+
+          <tr>
+            <td>1100 - 1130</td>
+            <td style="background-color:#FCF5C7" colspan="5">Recess</td>
+          </tr>
+
+          <tr>
+            <td>1130 - 1210</td>
+            <td style="background-color:#FFC4CD">Writing (EN)</td>
+            <td style="background-color:#BCC8FF">Science</td>
+            <td style="background-color:#FFC4CD">Reading (EN)</td>
+            <td style="background-color:#BCC8FF">Science</td>
+            <td style="background-color:#FFC4CD">Reading (EN)</td>
+          </tr>
+
+          <tr>
+            <td>1210 - 1250</td>
+            <td style="background-color:#9BF8EB">Playtime</td>
+            <td style="background-color:#D9D9D9">Surahs & Duas</td>
+            <td style="background-color:#9BF8EB">Playtime</td>
+            <td style="background-color:#FFC4CD">Writing (EN)</td>
+            <td style="background-color:#9BF8EB">Playtime</td>
+          </tr>
+
+          <tr>
+            <td>1250 - 1300</td>
+            <td style="background-color:#FCF5C7" colspan="5">Departure</td>
+          </tr>
+        </table>
+      </div>
+
+      <div id="full" class="tabcontent">
+        <h3>FULL-DAY SESSION</h3>
+        <p>Below is the schedule for the Little Islamic Scholars Program
+          full-day session. The session starts at 8.30 a.m. and
+          ends at 5.00 p.m.. Food for breakfast, recess, lunch
+          and tea-time are included.</p>
+        <table>
+          <tr>
+            <colgroup>
+              <col span="1">
+            </colgroup>
+            <td></td>
+            <th scope="col">M</th>
+            <th scope="col">T</th>
+            <th scope="col">W</th>
+            <th scope="col">T</th>
+            <th scope="col">F</th>
+          </tr>
+
+          <tr>
+            <td>0830 - 0900</td>
+            <td style="background-color:#FCF5C7" colspan="5">Arrival, Breakfast</td>
+          </tr>
+
+          <tr>
+            <td>0900 - 0940</td>
+            <td style="background-color:#FFD6FF">Maths</td>
+            <td style="background-color:#ADF7B6">Reading (BM)</td>
+            <td style="background-color:#C1EEFF">Music</td>
+            <td style="background-color:#ADF7B6">Reading (BM)</td>
+            <td style="background-color:#FFD6FF">Maths</td>
+          </tr>
+
+          <tr>
+            <td>0940 - 1020</td>
+            <td style="background-color:#D9D9D9">Iqra</td>
+            <td style="background-color:#FFEE93">PE</td>
+            <td style="background-color:#FFD6FF">Maths</td>
+            <td style="background-color:#FFEE93">PE</td>
+            <td style="background-color:#D9D9D9">Iqra</td>
+          </tr>
+
+          <tr>
+            <td>1020 - 1100</td>
+            <td style="background-color:#ADF7B6">Writing (BM)</td>
+            <td style="background-color:#FFC09F">Art</td>
+            <td style="background-color:#D9D9D9">Surahs & Duas</td>
+            <td style="background-color:#FFC09F">Art</td>
+            <td style="background-color:#ADF7B6">Writing (BM)</td>
+          </tr>
+
+          <tr>
+            <td>1100 - 1130</td>
+            <td style="background-color:#FCF5C7" colspan="5">Recess</td>
+          </tr>
+
+          <tr>
+            <td>1130 - 1210</td>
+            <td style="background-color:#FFC4CD">Writing (EN)</td>
+            <td style="background-color:#BCC8FF">Science</td>
+            <td style="background-color:#FFC4CD">Reading (EN)</td>
+            <td style="background-color:#BCC8FF">Science</td>
+            <td style="background-color:#FFC4CD">Reading (EN)</td>
+          </tr>
+
+          <tr>
+            <td>1210 - 1250</td>
+            <td style="background-color:#9BF8EB">Playtime</td>
+            <td style="background-color:#D9D9D9">Surahs & Duas</td>
+            <td style="background-color:#9BF8EB">Playtime</td>
+            <td style="background-color:#FFC4CD">Writing (EN)</td>
+            <td style="background-color:#9BF8EB">Playtime</td>
+          </tr>
+
+          <tr>
+            <td>1250 - 1400</td>
+            <td style="background-color:#FCF5C7" colspan="5">Shower, Lunch, Zuhur Prayer</td>
+          </tr>
+
+          <tr>
+            <td>1400 - 1530</td>
+            <td style="background-color:#9BF8EB" colspan="5">Naptime</td>
+          </tr>
+
+          <tr>
+            <td>1530 - 1630</td>
+            <td style="background-color:#FCF5C7" colspan="5">Tea Time, Playtime</td>
+          </tr>
+
+          <tr>
+            <td>1630 - 1700</td>
+            <td style="background-color:#9BF8EB"colspan="5">Asar Prayer, Departure</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+
+    <script>
+        function openCity(evt, cityName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+
+    <hr>
+    <footer>Copyright LITTLE SCHOLARS 2020 | Section 1</footer>
+  </body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title></title>
+
+    <style media="screen">
+    * {
+      /* border: 1px solid black; */
+      font-family: cursive, arial;
+    }
+
+      header
+      {
+        width: 100%;
+        margin-top: 10px;
+        padding: 10px;
+        text-align: center;
+        font-size: 27px;
+      }
+
+      h2 {
+        color: #133C55;
+        text-align: center;
+      }
+
+      body {
+        margin: 20px auto;
+        color: black;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        background-image: url(blueback.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+      }
+
+      .container {
+        display: flex;
+        align-items: center;
+      }
+
+      #text {
+        font-size: 18px;
+        padding-left: 5px;
+      }
+
+      #text a {
+        text-decoration: none;
+        color: black;
+      }
+
+      #mySidenav a {
+        position: absolute; /* Position them relative to the browser window */
+        top: -30px; /* Position them outside of the screen */
+        transition: 0.3s; /* Add transition on hover */
+        padding-top: 40px;
+        width: 120px; /* Set a specific width */
+        height: 40px;
+        text-decoration: none; /* Remove underline */
+        font-size: 20px;
+        color: white;
+        border-radius: 0 0px 5px 5px;
+        text-align : center;
+      }
+
+      #mySidenav a:hover {
+        top: 0; /* On mouse-over, make the elements appear as they should */
+      }
+
+      #program {
+        right: 510px;
+        background-color: #133C55;
+      }
+
+      #events {
+        right: 385px;
+        background-color: #386FA4;
+      }
+
+      #register {
+        right: 260px;
+        background-color: #59A5D8; /* Blue */
+      }
+
+      #appointment {
+        right: 135px;
+        background-color: #84D2F6; /* Red */
+        width: 150px;
+      }
+
+      #contact {
+        right: 10px;
+        background-color: #91E5F6 /* Light Black */
+      }
+
+      hr {
+        border: 1px solid black;
+        width: 77%;
+      }
+
+      .content{
+        width: 75%;
+        height: auto;
+        margin: auto;
+        margin-top: 3%;
+        padding: 15px;
+        border: 1px solid black;
+        text-align: justify;
+        background-color: rgba(89, 165, 216, 0.5);
+      }
+
+      img {
+        vertical-align: middle;
+      }
+
+      .back {
+        float: left;
+        margin-left: 11%;
+      }
+
+      .next {
+        float: right;
+        margin-right: 11%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+       <div id="image">
+         <img src="LSK Logo 1.png"
+              alt="web logo"
+              width="40" height="40">
+       </div>
+
+       <div id="text">
+         <a href="homepage.html">Little Scholar Kindergarten</a>
+       </div>
+    </div>
+
+    <!-- top navigation -->
+    <div id="mySidenav" class="sidenav">
+      <a href="1-program.html" id="program">Programs</a>
+      <a href="2-event.html" id="events">Events</a>
+      <a href="3-registration.html" id="register">Register</a>
+      <a href="4-appointment.html" id="appointment">Appointment</a>
+      <a href="5-contact-us.html" id="contact">Contact</a>
+    </div>
+
+    <header>
+        <div class="text">
+          <h2>Upcoming Event: Sports Day</h2>
+        </div>
+    </header>
+
+    <hr>
+
+    <form action="2-khatamQuran.html" method="post">
+      <button class="back"><< Back</button>
+    </form>
+    <form action="2-storytelling.html" method="post">
+      <button class="next">Next >></button>
+    </form>
+
+    <div class="content">
+      <p>Date: 4 April 2021 <br>
+        Venue: Little Scholar Field <br>
+        Time : 7.30 a.m - 1.00 p.m <br> <br>
+        Sports days is event staged by Little Scholar Kindergarten in which students
+        participate in competitive sporting activities, often with the aim of
+        winning trophies or prizes.In our kindergarten, we use a house system feature
+        such as blue, yellow, red and green to represent the students groups;
+        and they competing in sports program to become a champion. <br><br>
+        Games that are played on Little Scholar Kindergarten include:
+      </p>
+      <ul>
+        <li>50 metre sprint</li>
+        <li>Egg race</li>
+        <li>Spoon Race</li>
+        <li>Sack Race</li>
+        <li>Parent and child race</li>
+      </ul>
+      <p>The champion, runner-up and 3rd place will receive medals and hampers.</p>
+      <img src="2-sports.jpg" alt="" width=300px height=205px>
+      <img src="2-sports2.jpg" alt="" width=300px height=205px>
+      <img src="2-sports3.jpg" alt="" width=300px height=205px>
+    </div>
+
+    <hr>
+    <footer>Copyright LITTLE SCHOLARS 2020 | Section 1</footer>
+  </body>
+</html>

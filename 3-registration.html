@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Registration</title>
+    <link rel="stylesheet" href="3-registration.css">
+
+    </script>
+
+  </head>
+  <body>
+
+    <!-- little scholar logo -->
+    <div class="container">
+     <div id="image">
+       <img src="LSK Logo 1.png"
+            alt="web logo"
+            width="40" height="40">
+     </div>
+     <div id="text">
+       <a href="homepage.html">Little Scholar Kindergarten</a>
+     </div>
+    </div>
+
+    <!-- top navigation -->
+    <div id="mySidenav" class="sidenav">
+      <a href="1-program.html" id="program">Programs</a>
+      <a href="2-event.html" id="events">Events</a>
+      <a href="3-registration.html" id="register">Register</a>
+      <a href="4-appointment.html" id="appointment">Appointment</a>
+      <a href="5-contact-us.html" id="contact">Contact</a>
+    </div>
+
+    <header>
+        <h1>Registration</h1>
+        <p>It's time to enroll your children to our 2021 class session !</p>
+    </header>
+
+    <hr>
+    <br>
+
+    <div class="box">
+      <!-- Tab links -->
+      <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'tab1')" id="defaultOpen">Registration</button>
+        <button class="tablinks" onclick="openTab(event, 'tab2')">Student Details</button>
+        <button class="tablinks" onclick="openTab(event, 'tab3')">Payment</button>
+      </div>
+
+      <!-- Tab content -->
+      <div id="tab1" class="tabcontent">
+        <!-- Login part if already have an account -->
+        <h2>Login</h2>
+
+        <form class="login">
+          <div class="labels">
+            <label>Username <strong>*</strong> :</label><br>
+            <label>Password <strong>*</strong> :</label><br>
+          </div>
+          <div class="inputs">
+            <input type="text" class="username-login" required><br>
+            <input type="password" class="pass-login" required><br>
+          </div>
+
+
+          <input type="submit" class="submit" value="Login"> <br>
+
+        </form>
+
+        <!-- Parent Deatils -->
+        <h2>Parent Account Registration</h2>
+
+        <form class="parent" style="height:250px;">
+          <div class="labels2">
+            <label>Full Name <strong>*</strong> : </label><br>
+            <label>Phone Number <strong>*</strong> : </label><br>
+            <label>Email Address <strong>*</strong> : </label><br>
+            <label>Username <strong>*</strong> : </label><br>
+            <label>Password <strong>*</strong> : </label><br>
+            <label>Confirm Password <strong>*</strong> : </label><br>
+          </div>
+          <div class="inputs2">
+            <input type="text" required><br>
+            <input type="text" required><br>
+            <input type="text" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+              title="Please enter email address" placeholder="abcd@gmail.com" required><br>
+            <input type="text"  required><br>
+            <input type="password" id="password" required><br>
+            <input type="password" id="confirm_password" required><br>
+          </div>
+
+          <input type="submit" class="submit" value="Register"><br>
+
+        </form>
+      </div>
+
+
+      <div id="tab2" class="tabcontent">
+        <!-- Student Details -->
+        <h2>Student Details</h2>
+
+        <form class="student">
+          <label for="name">Full Name <strong>*</strong></label> <br>
+          <input type="text" class="name" required> <br><br>
+
+          <div>
+            <div class="icnum">
+              <label for="icnum">Birth Certification Number <strong>*</strong></label><br>
+              <input type="text" name="icnum" required>
+            </div>
+            <div class="passport">
+              <label class="Passport">Passport Number (if using passport)</label><br>
+              <input type="text" name="passport">
+            </div>
+          </div>
+          <br><br>
+
+          <div>
+            <div class="dob">
+              <label for="dob">Date of Birth <strong>*</strong></label><br>
+              <input type="date" class="dob" required>
+            </div>
+
+            <div class="gender">
+              <label class="Gender">Gender <strong>*</strong></label><br>
+              <select name="gender" required>
+                <option value=""></option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
+            </div>
+
+            <div class="disability">
+              <label class="Disability">Disability <strong>*</strong></label><br>
+              <select name="disability" required>
+                <option value=""></option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+              </select> <br><br>
+            </div>
+          </div>
+
+          <br><br>
+
+          <div>
+            <div class="race">
+              <label for="race">Race <strong>*</strong></label><br>
+              <input type="text" class="race" required>
+            </div>
+
+            <div class="nationality">
+              <label class="Nationality">Nationality <strong>*</strong></label><br>
+              <select name="nationality" required>
+                <option value=""></option>
+                <option value="malay">Malay</option>
+                <option value="chinese">Chinese</option>
+                <option value="indian">Indian</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="toilet">
+              <label class="Toilet">Toilet Trained <strong>*</strong></label><br>
+              <select name="toilet" required>
+                <option value=""></option>
+                <option value="none">None</option>
+                <option value="almost">Almost Toilet Trained</option>
+                <option value="fully">Fully Toilet Trained</option>
+              </select>
+            </div>
+          </div>
+
+           <br><br>
+
+          <label for="address">Address <strong>*</strong></label> <br>
+          <input type="text" class="address"> <br><br>
+
+          <div>
+            <div class="state">
+              <label for="state">State <strong>*</strong></label><br>
+              <select class="state" required>
+                <option value=""></option>
+                <option value="Johor">Johor</option>
+                <option value="Kedah">Kedah</option>
+                <option value="Kelantan">Kelantan</option>
+                <option value="Melaka">Melaka</option>
+                <option value="Negeri Sembilan">Negeri Sembilan</option>
+                <option value="Pahang">Pahang</option>
+                <option value="Perak">Perak</option>
+                <option value="Perlis">Perlis</option>
+                <option value="Pulau Pinang">Pulau Pinang</option>
+                <option value="Sabah">Sabah</option>
+                <option value="Sarawak">Sarawak</option>
+                <option value="Selangor">Selangor</option>
+                <option value="Terengganu">Terengganu</option>
+                <option value="Wilayah Persekutuan">Wilayah Persekutuan</option>
+              </select>
+            </div>
+
+            <div class="city">
+              <label class="City">City <strong>*</strong></label><br>
+              <input type="text" name="city" required>
+            </div>
+
+            <div class="postcode">
+              <label class="Postcode">Postcode <strong>*</strong></label><br>
+              <input type="text" name="postcode" required>
+            </div>
+
+          </div>
+
+          <div>
+            <input type="submit" class="submit" value="Save Details"><br>
+          </div>
+
+        </form>
+
+        <!-- Admission Details -->
+        <h2>Admission Details</h2>
+        <form class="admission" style="height: 100px;">
+          <label class="Session">Academic Session <strong>*</strong></label>
+          <label class="Programme">Programme <strong>*</strong></label>
+          <label class="Branch">Branch <strong>*</strong></label><br>
+
+          <select class="session" required>
+            <option value=""></option>
+            <option value="2021">Session 2021</option>
+            <option value="2022">Session 2022</option>
+          </select>
+          <select class="programme" required>
+            <option value=""></option>
+            <option value="basic">Little Scholar</option>
+            <option value="islamic">Little Islamic Scholar</option>
+          </select>
+          <select class="branch" required>
+            <option value=""></option>
+            <option value="gombak">Gombak, Kuala Lumpur</option>
+            <option value="kuantan">Kuantan, Pahang</option>
+            <option value="pagoh">Pagoh, Johor</option>
+          </select><br>
+
+          <input type="submit" class="submit" value="Save Details"><br>
+
+        </form>
+      </div>
+
+      <div id="tab3" class="tabcontent">
+
+        <h2>Payment Method</h2>
+        <div class="grid">
+          <div class="column">
+            <h3>Online Banking</h3>
+          </div>
+          <div class="column">
+            <h3>ATM/Cash Deposit</h3>
+          </div>
+          <div class="column">
+            <h3>Credit/Debit Card</h3>
+          </div>
+        </div>
+
+        <h2>Account Information</h2>
+        <div class="accinfo">
+          <p>12100012xxxxxx <br>
+            Bank Mualamat Sdn Bhd<br>
+            Little Scholar Kindergarten
+          </p>
+        </div>
+
+        <br>
+        <p class="proof">Please submit the proof of payment to our email : <br>
+          <a href="mailto:littlescholar@gmail.com?subject=feedback">littlescholar@gmail.com</a>
+        </p>
+        <br>
+        <a class="finish" href="3-confirmation.html">Finish</a><br><br>
+      </div>
+    </div>
+
+    <hr>
+
+    <footer>Copyright LITTLE SCHOLARS 2020 | Section 1</footer>
+
+
+    <script type="text/javascript">
+
+      function openTab(evt, tabName) {
+      // Declare all variables
+      var i, tabcontent, tablinks;
+
+      // Get all elements with class="tabcontent" and hide them
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+
+      // Get all elements with class="tablinks" and remove the class "active"
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+
+      // Show the current tab, and add an "active" class to the button that opened the tab
+      document.getElementById(tabName).style.display = "block";
+      evt.currentTarget.className += " active";
+      }
+
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
+
+      var password = document.getElementById("password");
+      var confirm_password = document.getElementById("confirm_password");
+
+      function validatePassword(){
+        if(password.value != confirm_password.value) {
+          confirm_password.setCustomValidity("Passwords Don't Match");
+        } else {
+          confirm_password.setCustomValidity('');
+        }
+      }
+
+      password.onchange = validatePassword;
+      confirm_password.onkeyup = validatePassword;
+
+    </script>
+
+  </body>
+</html>

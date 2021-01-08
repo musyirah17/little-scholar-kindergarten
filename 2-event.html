@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Event</title>
+
+    <style media="screen">
+      /* * {
+        border: 1px solid black;
+      } */
+
+      * {
+        font-family: cursive, arial;
+      }
+
+      body {
+        margin: 20px auto;
+        color: black;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        background-image: url(blueback.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+      }
+
+      .container {
+        display: flex;
+        align-items: center;
+      }
+
+      #text {
+        font-size: 18px;
+        padding-left: 5px;
+      }
+
+      #text a {
+        text-decoration: none;
+        color: black;
+      }
+
+
+      /* Style the links inside the sidenav */
+      #mySidenav a {
+        position: absolute; /* Position them relative to the browser window */
+        top: -30px; /* Position them outside of the screen */
+        transition: 0.3s; /* Add transition on hover */
+        padding-top: 40px; /* 15px padding */
+        width: 120px; /* Set a specific width */
+        height: 40px;
+        text-decoration: none; /* Remove underline */
+        font-size: 20px; /* Increase font size */
+        color: white; /* White text color */
+        border-radius: 0 0px 5px 5px; /* Rounded corners on the top right and bottom right side */
+        text-align : center;
+      }
+
+      #mySidenav a:hover {
+        top: 0; /* On mouse-over, make the elements appear as they should */
+      }
+
+      #program {
+        right: 510px;
+        background-color: #133c55;
+      }
+
+      #events {
+        right: 385px;
+        background-color: #386fa4;
+      }
+
+      #register {
+        right: 260px;
+        background-color: #59a5d8;
+      }
+
+      #appointment {
+        right: 135px;
+        background-color: #84d2f6;
+        width: 150px;
+      }
+
+      #contact {
+        right: 10px;
+        background-color: #91e5f6
+      }
+
+      header
+      {
+        width: 100%;
+        padding-top: 10px;
+        text-align: center;
+        font-size: 27px;
+        line-height: 30px;
+        font-family: cursive;
+      }
+
+      h1 {
+        color: #006266;
+      }
+
+      h2 {
+        color: #133C55;
+        text-align: center;
+      }
+
+      hr {
+        border: 1px solid #001233;
+        background-color: #001233;
+        width: 75%;
+      }
+
+      .OngoingEvent {
+        width: 72.5%;
+        margin: auto;
+        padding: 15px;
+        border: 1px solid black;
+        font-size: 20px;
+        text-align: center;
+        background-color: rgba(89, 165, 216, 0.5);
+      }
+
+      .UpcomingEvent {
+        width: 70%;
+        height: auto;
+        margin: auto;
+        padding: 30px;
+        border: 1px solid black;
+        text-align: justify;
+        font-size: 20px;
+        background-color: rgba(89, 165, 216, 0.5);
+      }
+
+      .column {
+        float: left;
+        width: 49.5%;
+        padding:10px;
+        text-align: center;
+      }
+      .column2 {
+        padding:10px;
+        text-align: center;
+
+      }
+
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
+        align-items: center;
+      }
+
+      .OngoingEvent img{
+        width: 100px;
+        height: 80px;
+        vertical-align: middle;
+
+      }
+      .UpcomingEvent img{
+        width: 100px;
+        height: 80px;
+        vertical-align: middle;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+       <div id="image">
+         <img src="LSK Logo 1.png"
+              alt="web logo"
+              width="40" height="40">
+       </div>
+
+       <div id="text">
+         <a href="homepage.html">Little Scholar Kindergarten</a>
+       </div>
+    </div>
+
+    <!-- top navigation -->
+    <div id="mySidenav" class="sidenav">
+      <a href="1-program.html" id="program">Programs</a>
+      <a href="2-event.html" id="events">Events</a>
+      <a href="3-registration.html" id="register">Register</a>
+      <a href="4-appointment.html" id="appointment">Appointment</a>
+      <a href="5-contact-us.html" id="contact">Contact</a>
+    </div>
+
+    <header>
+        <div class="eventTitle">
+          <h1>Events</h1>
+          <p>See the events for ongoing and upcoming soon!</p>
+        </div>
+    </header>
+    <hr><br>
+
+    <main>
+        <h2>Ongoing Events</h2>
+        <div class="OngoingEvent">
+          <img src="2-pibglogo.png" alt="conference-logo"> <br><br>
+          Parent and Teacher Conference <br><br>
+          <a href="2-conference.html"><button> Learn More &raquo</button></a>
+        </div>
+
+        <h2>Upcoming Events</h2>
+        <div class="UpcomingEvent">
+          <div class="row">
+            <div class="column">
+              <img src="2-sportslogo.png" alt=""> <br><br>
+              Sports Day <br><br>
+              <a href="2-sportsDay.html"><button> Learn More &raquo</button></a>
+            </div>
+
+            <div class="column">
+              <img src="2-storytellinglogo.jpg" alt=""> <br><br>
+              Story-Telling Competition <br><br>
+              <a href="2-storyTelling.html"><button> Learn More &raquo</button></a>
+            </div>
+
+            <div class="column">
+              <img src="2-nashidlogo.jpeg" alt=""> <br><br>
+              Nashid Competition <br><br>
+              <a href="2-nashid.html"><button> Learn More &raquo</button></a>
+            </div>
+
+            <div class="column2">
+              <img src="2-graduationlogo.jpg" alt=""> <br><br>
+              Graduation day <br><br>
+              <a href="2-graduation.html"><button> Learn More &raquo</button></a>
+            </div>
+
+            <div class="column2">
+              <img src="2-quranlogo.png" alt=""> <br><br>
+              Khatam Quran <br><br>
+              <a href="2-khatamQuran.html"><button> Learn More &raquo</button></a>
+            </div>
+          </div>
+        </div>
+      <br>
+    </main>
+    <hr>
+    <footer>Copyright LITTLE SCHOLARS 2020 | Section 1</footer>
+  </body>
+</html>
