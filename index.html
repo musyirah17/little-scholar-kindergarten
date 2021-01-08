@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Little Scholar Kindergarten</title>
+
+    <style media="screen">
+
+      * {
+        /* border: 1px solid black; */
+        font-family: cursive, arial;
+      }
+
+      header {
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+      }
+
+      h1 {
+        color: #1F465D;
+      }
+
+      h2 {
+        color: black;
+        text-align: center;
+      }
+
+      .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+      }
+
+      body {
+        margin: 20px auto;
+        background-image: url(blueback.jpg);
+        background-size: cover;
+        color: black;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+      }
+
+      .container {
+        display: flex;
+        align-items: center;
+      }
+      #text {
+        font-size: 18px;
+        padding-left: 5px;
+      }
+      #text a {
+        text-decoration: none;
+        color: black;
+      }
+
+
+      /* Style the links inside the sidenav */
+      #mySidenav a {
+        position: absolute; /* Position them relative to the browser window */
+        top: -30px; /* Position them outside of the screen */
+        transition: 0.3s; /* Add transition on hover */
+        padding-top: 40px; /* 15px padding */
+        width: 120px; /* Set a specific width */
+        height: 40px;
+        text-decoration: none; /* Remove underline */
+        font-size: 20px; /* Increase font size */
+        color: white; /* White text color */
+        border-radius: 0 0px 5px 5px; /* Rounded corners on the top right and bottom right side */
+        text-align : center;
+      }
+
+      #mySidenav a:hover {
+        top: 0; /* On mouse-over, make the elements appear as they should */
+      }
+
+
+      #program {
+        right: 510px;
+        background-color: #133c55;
+      }
+
+      #events {
+        right: 385px;
+        background-color: #386fa4;
+      }
+
+      #register {
+        right: 260px;
+        background-color: #59a5d8;
+      }
+
+      #appointment {
+        right: 135px;
+        background-color: #84d2f6;
+        width: 150px;
+      }
+
+      #contact {
+        right: 10px;
+        background-color: #91e5f6
+      }
+
+      hr {
+        border: 1px solid #001233;
+        background-color: #001233;
+        width: 78%;
+      }
+
+      .box  {
+        width:75%;
+        /* margin:10px; */
+        /* margin-left: 200px; */
+        margin:auto;
+        padding:20px;
+        border:3px solid black;
+        background-color: #84d2f6;
+        border-radius: 15px;
+      }
+
+      .aboutus {
+        background: #DDFEFF;
+        /* width: 80%; */
+        margin: auto;
+        padding: 15px;
+        border: 1px solid black;
+        border-radius: 5px;
+        font-size: 20px;
+        text-align: justify;
+      }
+
+      .News {
+        background: #DDFEFF;
+        /* width: 75%; */
+        height: auto;
+        margin: auto;
+        padding: 15px;
+        border: 1px solid black;
+        border-radius: 5px;
+        text-align: justify;
+        display: flex;
+      }
+
+      .column2{
+        flex: 33.33%;
+        padding: 5px;
+      }
+
+      #popup1{
+        font-size: 20px;
+        color: white;
+        margin: 10px;
+        padding: 0 10px;
+        max-width: 60%;
+        text-align: center;
+      }
+
+      #popup2{
+        font-size: 20px;
+        color: white;
+        margin: 10px;
+        padding: 0 10px;
+        max-width: 60%;
+        text-align: center;
+      }
+
+      #popup3{
+        font-size: 20px;
+        color: white;
+        margin: 10px;
+        padding: 0 10px;
+        max-width: 60%;
+        text-align: center;
+      }
+
+      .Programs {
+        background: #DDFEFF;
+        /* width: 75%; */
+        margin: auto;
+        padding: 15px;
+        border: 1px solid black;
+        font-size: 20px;
+        border-radius: 5px;
+      }
+
+      .column {
+        float: left;
+        width: 49.5%;
+      }
+
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
+        align-items: center;
+      }
+
+      .Programs a {
+        border: 1px solid black;
+        text-decoration: none;
+        background-color: white;
+        color: black;
+        padding: 2px 5px;
+        font-size: 15px;
+      }
+
+      footer {
+        font-size: 13px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+     <div id="image">
+       <img src="LSK Logo 1.png"
+            alt="web logo"
+            width="40" height="40">
+     </div>
+     <div id="text">
+       <a href="homepage.html">Little Scholar Kindergarten</a>
+     </div>
+   </div>
+
+   <!-- top navigation -->
+   <div id="mySidenav" class="sidenav">
+     <a href="1-program.html" id="program">Programs</a>
+     <a href="2-event.html" id="events">Events</a>
+     <a href="3-registration.html" id="register">Register</a>
+     <a href="4-appointment.html" id="appointment">Appointment</a>
+     <a href="5-contact-us.html" id="contact">Contact</a>
+   </div>
+
+   <br>
+    <header>
+      <div class="logo">
+        <img src="LSK Logo 1.png" alt="lsklogo"
+             width="120" height="120">
+        <div class="text">
+          <h2>WELCOME TO</h2>
+          <h1>LITTLE SCHOLARS KINDERGARTEN</h1>
+        </div>
+      </div>
+    </header>
+
+    <hr>
+    <br>
+
+    <div class="box">
+      <h2>About Us</h2>
+      <div class="aboutus">
+        Little Scholars Kindergarten is an institution that focuses on developing
+        children’s intellectual and spiritual capabilities along with their creativity.
+        Our programs not only focus on worldly aspects and knowledge, but are also very
+        focused in improving children’s morals and Islamic knowledge. A well-balanced mixture
+        of academic, religion and artistry sessions are held with ample breaks in between,
+        so that children do not get overwhelmed with our syllabus.
+    <br><br>
+        Our objective in Little Scholars Kindergarten are as below:
+    <br>
+      <ul>
+        <li>To develop children in academic aspects such as reading in Bahasa Melayu, English and helping children in simple math.</li>
+        <li>To increase Muslim children’s knowledge within Islamic practices such as solat, du’a and reciting the iqra.</li>
+        <li>To expand children’s morality and individuality in teaching them moral values and proper manners.</li>
+        <li>To enhance children’s creativity with art classes and events like show-and-tells.</li>
+        <li>To help children instill fun learning in their lives.</li>
+      </ul>
+      </div>
+
+      <h2>News</h2>
+      <div class="News">
+        <p>
+
+          <div class="column2">
+            <center>Registeration for Intake 20/21
+              <br><br>
+            <center><img src="registration.png" alt="registration-images" width="80" height="80" style="vertical-align:middle">
+              <br><br>
+            <button class="popup1_open">Learn More &raquo;</button>
+          </div>
+
+          <br><br>
+
+        <div class="column2">
+          <center>New Norm of Learning
+            <br><br>
+          <center><img src="newnorm.jpg" alt="newnorm-images" width="80" height="80" style="vertical-align:middle">
+            <br><br>
+          <button class="popup2_open">Learn More &raquo;</button>
+        </div>
+
+
+          <br><br>
+
+        <div class="column2">
+          <center>COVID-19 School Closure
+          <br><br>
+          <center><img src="Covid-19.jpg" alt="Covid-19-images" width="80" height="80" style="vertical-align:middle">
+          <br> <br>
+          <button class="popup3_open">Learn More &raquo;</button>
+        </div>
+          </div>
+
+        </p>
+
+
+        <h2>Programs</h2>
+          <div class="Programs">
+            <div class="row">
+             <div class="column">
+                <center><img src="email-icon.png" alt="email-images " style="width:10%"></center>
+                <center><br>Little Scholar Program</center>
+              </div>
+              <div class="column">
+                <center><img src="phone-icon.png" alt="phone-images " style="width:10%"></center>
+                <center><br>Little Islamic Scholar Program</center>
+              </div>
+            </div>
+             <a href="1-program.html">Go to Program</a>
+          </div>
+        </div>
+
+        <hr>
+      <footer>Copyright LITTLE SCHOLARS 2020 | Section 1</footer>
+
+    </div>
+
+    <section id="popup1">
+      <center><p>This is a reminder that registeration forms are available online for incoming kindergarten students.<br>
+      This form will open from 25 December 2020 until 10 January 2021 <br>
+      If you have any enrollment questions, you can contact us.</p>
+    </section>
+
+    <section id="popup2">
+        <center><p>At Little Scholar Kindergarten we believe that your peace of mind as parents is paramount. It is vital that you know your child is
+      gaining all that they can during this pandemic. Little Scholar Kindergarten welcomes parents and their children from ages 3 years to 6 years old to try out
+      and experience our comprehensive Remote Learning program. Book an appointment with us and find out more about our Free Trial Class and be
+      eligible for our exclusive promotions.</p>
+    </section>
+
+    <section id="popup3">
+      <center><p>In view of the COVID-19 spike in the country recently, the Malaysia Government has officially extended the Movement Control
+      Order (MCO) until 12 May 2020. <br>
+      Let’s stand as one to combat this disease! <br>
+      Stay safe positive and healthy! Don’t forget to wash your hands!</p>
+      </section>
+
+    </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/vast-engineering/jquery-popup-overlay@2/jquery.popupoverlay.min.js"></script>
+  <script>
+  $('#popup1').popup();
+
+
+  $('#popup2').popup({
+  pagecontainer: '#page',
+  escape: false
+  });
+
+  $('#popup3').popup({
+  pagecontainer: '#page',
+  escape: false
+  });
+
+  </script>
+
+  </body>
+</html>
