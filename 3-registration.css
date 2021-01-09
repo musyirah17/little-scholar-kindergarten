@@ -27,7 +27,7 @@ body {
   position: absolute; /* Position them relative to the browser window */
   top: -30px; /* Position them outside of the screen */
   transition: 0.3s; /* Add transition on hover */
-  padding-top: 40px; /* 15px padding */
+  padding-top: 40px; /* 40px padding */
   width: 120px; /* Set a specific width */
   height: 60px;
   text-decoration: none; /* Remove underline */
